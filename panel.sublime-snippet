@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div class="panel panel-${1:default}">
+    <div class="panel-heading"> $2</div>
+        <div class="panel-body">
+             $3
+        </div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>panel</tabTrigger> -
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.blade,text.html</scope>
+</snippet>
