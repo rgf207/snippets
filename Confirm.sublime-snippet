@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+ $.confirm({
+    theme : 'material',
+    type: '${1:red}',
+    title: '${2}',
+    content : '${3}',
+    buttons: {
+      confirm: function() {
+        $.ajax({
+          type: '{$4}',
+          url: '${5}',
+          success: function(data) {
+            if(data.success)
+            {
+              var n = noty({
+                text: data.message,
+                theme: 'relax',
+                type: 'success',
+                timeout : 5000,
+              });
+              ${6}
+            } 
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
+                console.log(xhr.status);
+                console.log(xhr.responseText);
+                console.log(thrownError);
+          }
+        });
+      },
+      cancel: function() {
+        ${7:return;}
+      }
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>.confirm</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

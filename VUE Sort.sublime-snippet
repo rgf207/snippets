@@ -1,11 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<div ${1:class="$2"} ${3:id="${4}"}>
-     $5
-</div> <!-- $2 -->
+<a href="#" class="sortable" @click="sortBy('${1}')">${2} <i class="fa fa-sort"></i></a>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>div</tabTrigger>
+	<tabTrigger>vue.sort</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>text.blade</scope>
 </snippet>

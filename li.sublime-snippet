@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<li class="$1"><a href="$2">$3</a></li>
+<li ${1:class="$2"}>${3:<a href="$4">$5</a>}</li>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>li</tabTrigger>
