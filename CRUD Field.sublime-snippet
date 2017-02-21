@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\$this->crud->addField([ 
+    'name' => '${1}',
+    'label' => '${2}',
+    'type' => '${3}',
+    ${4}
+], ${5:'both'});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>crudfield</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
