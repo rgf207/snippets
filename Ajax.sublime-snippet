@@ -7,7 +7,8 @@
 	success: function(data) {
 		${4}
 	},
-	error: ${5:function (xhr, ajaxOptions, thrownError) {
+	${5:global: false,}
+	error: ${6:function (xhr, ajaxOptions, thrownError) {
            		console.log(xhr.status);
 				console.log(xhr.responseText);
 				console.log(thrownError);

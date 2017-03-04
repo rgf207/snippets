@@ -2,7 +2,7 @@
 	<content><![CDATA[
 <div class="${1:form-group $2}">
      <label for="$3">$4</label>
-     <input type="text" class="form-control" id="$3" name="$3" ${5:placeholder="$6"}>
+     <input type="${5:text}" class="form-control" id="$3" name="$3" ${6:placeholder="$7"} >
      ${7:<span class="helper-text">$8</span>}
 </div>
 ]]></content>
